@@ -1,0 +1,291 @@
+    s:root{
+    --prim_color: #fff200;
+    --sec_color: 
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+.container{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/images/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    width: calc(100vw - 300px);
+    height: 100%;
+    left: 300px;
+    /* background-attachment: fixed; */
+    z-index: 10000000;
+}
+a{
+    text-decoration: none;
+}
+.header, .footer, .nav{
+    width: 300px;
+    background: #ffeaa7;
+    position: fixed;
+}
+.pre-logo{
+    height: 230px;
+    width: 100%;
+}
+.logo{
+    border: 2px solid brown;
+    height: 90%;
+    width: 70%;
+    top: 30px;
+    bottom: 50px;
+    left: 14%;
+    right: 15%;
+    position: relative;
+    border-radius: 0%;
+    background: url("/images/st-albert-legrand.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    outline: none;
+}
+.header{
+    height: 100vh;
+    top: 0;
+    left: 0; 
+    bottom: 0;
+}
+.nav{
+    top: 15%;
+    height: 270px;
+    /*border: 2px solid black;*/
+    position: relative;
+}
+.nav div{
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: calc(270px/4);
+    width: 100%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+    margin-bottom: 4.002px;
+    
+}
+.nav div a{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    color: brown;
+    font-weight: bold;
+    
+}
+.nav div a::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid brown;
+    border-bottom: 3px solid brown;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: .2s;
+    transition: .2s;    
+    
+}
+.nav div a:hover::before{
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+}
+.footer{
+    top: 30%;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+}
+.sociaux{
+    position: relative;
+    height: 100%;
+    width: auto;
+    
+}
+.sociaux a{
+    position: fixed;
+    top: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.sociaux a div{
+    width: calc(120px/3);
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    transition: .2s;
+    /*box-shadow: 0px 0px 5px 6px rgba(0,0,0,0.5);*/
+    
+}
+.fb{
+    color:#3b5998;
+}
+.insta{
+    color: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    color: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    color: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%); 
+}
+.tw{
+    color : #00acee;
+}
+.sociaux a div:hover{
+   margin-top: 600px;
+    -webkit-box-shadow: 0px 0px 5px 6px rgb(150,75,0,.5);
+            box-shadow: 0px 0px 5px 6px rgb(150,75,0,.5);
+}
+
+
+/********** index **********/
+.block{
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    top : 1%;
+}
+
+h1{
+   font-size: 80px; 
+}
+p{
+    text-align: justify;
+}
+.btn{
+    background: none;
+    height: 10%;
+    position: absolute;
+    color: white;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    transition: .2s;
+}
+.btn:hover{
+    background: /*rgb(150,75,0,1)*/#ffeaa7;
+    cursor: pointer;
+    border: none;
+    color: black;
+}
+.btn:focus{
+    outline: none;
+}
+
+
+/********** contact **********/
+.container>div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: auto;
+}
+    
+.container div:first-child{
+    top: 5%;
+    width: auto;
+}
+.map{
+    position: absolute;
+    width:50vw;
+    height: 50vh;
+}
+.container div:nth-child(2){
+    top: 20%;
+    position: relative;
+}
+.bt{
+    background: none;
+    height: 10vh;
+    color: white;
+    width: auto;
+    font-size: 30px;
+    transition: .2s;
+    margin: 20%;
+}
+.bt:hover{
+    background: rgb(150,75,0,1);
+    cursor: pointer;
+    border: none;
+}
+.bt-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50vw;
+}
+.bt-contact a{
+    position: relative;
+    margin: 10px;
+}
+
+
+/****************new*************/
+.container .contact{
+    /*border: 2px solid black;*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: auto;
+    background: #ffeaa7;
+    opacity: .7;
+    color: black;
+    padding: 5%;
+    box-shadow: 0px 0px 7px 7px rgb(0,0,0,.5);
+}
+.contact .md-bd .content p i{
+    margin-right: 10px;
+}
+h5{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+
+/********** index **********/
